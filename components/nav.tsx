@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X, Zap } from "lucide-react";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -9,14 +10,15 @@ import { cn } from "@/lib/utils";
 import { localeLabels, locales, type Locale } from "@/lib/i18n";
 
 const links = [
-  { href: "#services", label: "Services" },
-  { href: "#results", label: "Results" },
-  { href: "#process", label: "Process" },
-  { href: "#pricing", label: "Pricing" },
+  { href: "/services", label: "Services" },
+  { href: "/results", label: "Results" },
+  { href: "/process", label: "Process" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/portal", label: "Client Portal" },
 ];
 
 export function Nav() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [locale, setLocale] = useState<Locale>("en");
@@ -59,7 +61,10 @@ export function Nav() {
               <Link
                 key={l.href}
                 href={l.href}
-                className="rounded-full px-4 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                className={cn(
+                  "rounded-full px-4 py-2 text-sm transition-colors hover:text-foreground",
+                  pathname === l.href ? "text-cyan-electric" : "text-muted-foreground"
+                )}
               >
                 {l.label}
               </Link>
@@ -69,16 +74,11 @@ export function Nav() {
           <div className="flex items-center gap-2">
             <LocaleSelect locale={locale} onChange={setLocale} />
             <ThemeToggle />
-            <Button
-              variant="primary"
-              size="sm"
-              className="hidden md:inline-flex"
-              onClick={() =>
-                document.getElementById("quote")?.scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              Free Audit
-            </Button>
+            <Link href="/pricing#quote" className="hidden md:inline-flex">
+              <Button variant="primary" size="sm">
+                Free Audit
+              </Button>
+            </Link>
             <button
               type="button"
               aria-label="Menu"
@@ -103,15 +103,9 @@ export function Nav() {
                   {l.label}
                 </Link>
               ))}
-              <Button
-                className="mt-2"
-                onClick={() => {
-                  setOpen(false);
-                  document.getElementById("quote")?.scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                Free Audit
-              </Button>
+              <Link href="/pricing#quote" onClick={() => setOpen(false)}>
+                <Button className="mt-2 w-full">Free Audit</Button>
+              </Link>
             </div>
           </div>
         )}

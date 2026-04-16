@@ -27,9 +27,9 @@ export function Footer() {
               Agency
             </h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="#services" className="hover:text-cyan-electric">Services</Link></li>
-              <li><Link href="#results" className="hover:text-cyan-electric">Results</Link></li>
-              <li><Link href="#pricing" className="hover:text-cyan-electric">Pricing</Link></li>
+              <li><Link href="/services" className="hover:text-cyan-electric">Services</Link></li>
+              <li><Link href="/results" className="hover:text-cyan-electric">Results</Link></li>
+              <li><Link href="/pricing" className="hover:text-cyan-electric">Pricing</Link></li>
               <li><Link href="/portal" className="hover:text-cyan-electric">Client Portal</Link></li>
             </ul>
           </div>
@@ -40,7 +40,7 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/api/roi-calculator" className="hover:text-cyan-electric">2026 ROI Calculator (PDF)</Link></li>
-              <li><Link href="#faq" className="hover:text-cyan-electric">FAQ</Link></li>
+              <li><Link href="/pricing#faq" className="hover:text-cyan-electric">FAQ</Link></li>
               <li><Link href="/privacy" className="hover:text-cyan-electric">Privacy</Link></li>
               <li><Link href="/terms" className="hover:text-cyan-electric">Terms</Link></li>
             </ul>

@@ -102,9 +102,9 @@ export function PortalTeaser() {
         </motion.div>
 
         <div className="mt-8 text-center">
-          <Button asChild={false} variant="secondary" size="lg">
-            <Link href="/portal">Preview the portal</Link>
-          </Button>
+          <Link href="/portal">
+            <Button variant="secondary" size="lg">Preview the portal</Button>
+          </Link>
         </div>
       </div>
     </section>

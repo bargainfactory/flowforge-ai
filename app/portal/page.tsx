@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import {
   Activity,
-  ArrowLeft,
   ArrowUpRight,
   Bot,
   CheckCircle2,
@@ -12,8 +11,8 @@ import {
   LineChart,
   Lock,
   Settings,
-  Zap,
 } from "lucide-react";
+import { PageLayout } from "@/components/page-layout";
 import { Button } from "@/components/ui/button";
 
 const automations = [
@@ -70,38 +69,17 @@ const recentLogs = [
 
 export default function PortalPage() {
   return (
-    <div className="min-h-screen bg-background">
-      <div className="border-b border-border/60">
-        <div className="container flex items-center justify-between py-4">
-          <div className="flex items-center gap-3">
-            <Link
-              href="/"
-              className="grid h-9 w-9 place-items-center rounded-full border border-border transition hover:border-cyan-electric/40"
-            >
-              <ArrowLeft className="h-4 w-4" />
-            </Link>
-            <div className="flex items-center gap-2">
-              <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-cyan-electric to-indigo-400 text-navy-900">
-                <Zap className="h-4 w-4" strokeWidth={2.5} />
-              </span>
-              <span className="font-display font-semibold">
-                FlowForge <span className="gradient-text">Portal</span>
-              </span>
-            </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="rounded-full border border-border bg-card/50 px-3 py-1 text-xs text-muted-foreground">
-              Demo mode
-            </span>
-            <Button variant="outline" size="sm">
-              <Lock className="h-3.5 w-3.5" />
-              Sign in
-            </Button>
-          </div>
+    <PageLayout>
+      <div className="container pb-10">
+        <div className="mb-4 flex items-center gap-3">
+          <span className="rounded-full border border-border bg-card/50 px-3 py-1 text-xs text-muted-foreground">
+            Demo mode
+          </span>
+          <Button variant="outline" size="sm">
+            <Lock className="h-3.5 w-3.5" />
+            Sign in
+          </Button>
         </div>
-      </div>
-
-      <div className="container py-10">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -224,12 +202,12 @@ export default function PortalPage() {
           <p className="mt-1 text-muted-foreground">
             Real clients get a private portal with live data, one-click tune-ups, and Slack-integrated alerting.
           </p>
-          <Button className="mt-5" size="lg" asChild={false}>
-            <Link href="/#quote">Get your own portal</Link>
-          </Button>
+          <Link href="/pricing#quote">
+            <Button className="mt-5" size="lg">Get your own portal</Button>
+          </Link>
         </div>
       </div>
-    </div>
+    </PageLayout>
   );
 }
 

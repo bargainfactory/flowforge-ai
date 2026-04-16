@@ -1,8 +1,8 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { Sparkles, X, ArrowRight, Loader2 } from "lucide-react";
-import { useEffect, useState, FormEvent } from "react";
+import { Sparkles, X, ArrowRight } from "lucide-react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 
 const questions = [
@@ -167,9 +167,7 @@ export function StickyCTA() {
                     <Button
                       className="mt-5 w-full"
                       onClick={() =>
-                        document
-                          .getElementById("quote")
-                          ?.scrollIntoView({ behavior: "smooth" })
+                        window.location.assign("/pricing#quote")
                       }
                     >
                       Get full instant quote

@@ -230,12 +230,12 @@ export function ContactForm() {
                   </div>
 
                   <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">
-                    <Button size="lg" asChild={false}>
-                      <a href={calendlyUrl} target="_blank" rel="noopener noreferrer">
+                    <a href={calendlyUrl} target="_blank" rel="noopener noreferrer">
+                      <Button size="lg">
                         <Calendar className="h-4 w-4" />
                         Book strategy call (pre-filled)
-                      </a>
-                    </Button>
+                      </Button>
+                    </a>
                     <Button
                       variant="secondary"
                       size="lg"
