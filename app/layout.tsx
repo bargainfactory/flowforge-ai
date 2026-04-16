@@ -1,0 +1,237 @@
+import type { Metadata } from "next";
+import { ThemeProvider } from "@/components/theme-provider";
+import "./globals.css";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://flowforge.ai";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default:
+      "FlowForge AI — Premium AI Automation for Small Business | Zapier + GPT Agents",
+    template: "%s | FlowForge AI",
+  },
+  description:
+    "FlowForge AI builds done-for-you Zapier flows and custom GPT agents for restaurants, e-commerce stores, consultants, and local service businesses. Recurring retainers from $500/mo. Ship revenue-grade automations in 14 days.",
+  keywords: [
+    "AI automation agency",
+    "Zapier automation service",
+    "GPT agents for small business",
+    "AI automation for restaurants",
+    "e-commerce automation",
+    "lead capture automation",
+    "inbox triage AI",
+    "onboarding automation",
+    "AI micro agency",
+    "automation retainer",
+    "FlowForge AI",
+    "done for you automation",
+    "small business AI",
+    "custom GPT agent",
+    "Zapier expert",
+    "automation consulting",
+  ],
+  authors: [{ name: "FlowForge AI" }],
+  creator: "FlowForge AI",
+  publisher: "FlowForge AI",
+  robots: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "FlowForge AI",
+    title: "FlowForge AI — Premium AI Automation for Small Business",
+    description:
+      "Done-for-you Zapier flows and custom GPT agents for restaurants, e-com stores, consultants, and local service businesses. From $500/mo.",
+    images: [
+      {
+        url: `${siteUrl}/og.png`,
+        width: 1200,
+        height: 630,
+        alt: "FlowForge AI — AI Automation for Small Business",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FlowForge AI — Premium AI Automation for Small Business",
+    description:
+      "Done-for-you Zapier flows and GPT agents. Ship in 14 days, from $500/mo.",
+    images: [`${siteUrl}/og.png`],
+    creator: "@flowforgeai",
+  },
+  alternates: {
+    canonical: siteUrl,
+    languages: {
+      en: `${siteUrl}`,
+      es: `${siteUrl}/es`,
+      fr: `${siteUrl}/fr`,
+    },
+  },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION ?? undefined,
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${siteUrl}/#org`,
+      name: "FlowForge AI",
+      url: siteUrl,
+      logo: `${siteUrl}/logo.png`,
+      description:
+        "Premium AI automation agency building done-for-you Zapier flows and custom GPT agents for small businesses.",
+      contactPoint: {
+        "@type": "ContactPoint",
+        email: "hello@flowforge.ai",
+        contactType: "sales",
+        availableLanguage: ["English", "Spanish", "French"],
+      },
+      sameAs: [
+        "https://twitter.com/flowforgeai",
+        "https://linkedin.com/company/flowforgeai",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
+      name: "FlowForge AI",
+      publisher: { "@id": `${siteUrl}/#org` },
+      inLanguage: ["en", "es", "fr"],
+    },
+    {
+      "@type": "Service",
+      "@id": `${siteUrl}/#service`,
+      name: "AI Automation Retainer",
+      provider: { "@id": `${siteUrl}/#org` },
+      serviceType: "AI Automation Agency",
+      description:
+        "Monthly automation retainers including Zapier flows, custom GPT agents, inbox triage, lead capture, onboarding, and more for small businesses.",
+      offers: [
+        {
+          "@type": "Offer",
+          name: "Starter",
+          price: "500",
+          priceCurrency: "USD",
+          description:
+            "1 flagship automation + inbox triage agent. Ideal for solo operators.",
+        },
+        {
+          "@type": "Offer",
+          name: "Growth",
+          price: "1500",
+          priceCurrency: "USD",
+          description:
+            "Up to 5 automations + custom GPT agent. Full-funnel coverage.",
+        },
+        {
+          "@type": "Offer",
+          name: "Scale",
+          price: "3000",
+          priceCurrency: "USD",
+          description:
+            "Unlimited automations, dedicated agent engineer, priority everything.",
+        },
+      ],
+      areaServed: { "@type": "Place", name: "Worldwide" },
+      audience: {
+        "@type": "Audience",
+        audienceType:
+          "Small business owners: restaurants, e-commerce stores, consultants, local service businesses",
+      },
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${siteUrl}/#faq`,
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How fast will I see ROI?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Most clients break even within 21 days of launch. Our typical Growth-tier engagement returns 4–9× the monthly retainer in hard cost savings by month 3.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do I need technical staff?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "No. We run the build, the ops, and the monitoring. You get a Loom walkthrough, a runbook, and Slack access.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What tools do you integrate with?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Anything with an API. Native expertise in Zapier, Make, HubSpot, Shopify, Stripe, Gmail/Outlook, Calendly, Notion, Airtable, Slack, Twilio, and OpenAI/Anthropic.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I cancel month-to-month?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. All retainers are month-to-month after a 30-day onboarding. You keep every automation we build.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is my data safe?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We run on your infrastructure (your Zapier, your OpenAI key, your DB). We never store customer PII. SOC 2 Ready, GDPR-compliant, signed DPA on request.",
+          },
+        },
+      ],
+    },
+  ],
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://rsms.me/" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <link
+          rel="stylesheet"
+          href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}

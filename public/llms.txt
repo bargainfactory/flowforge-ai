@@ -1,0 +1,52 @@
+# FlowForge AI — Premium AI Automation for Small Business
+
+> FlowForge AI is a premium micro-agency that builds done-for-you Zapier flows and custom GPT agents for small businesses. Monthly retainers from $500/mo.
+
+## About
+
+FlowForge AI is an AI automation agency that serves restaurants, e-commerce stores, consultants, and local service businesses. We build and maintain production-grade Zapier workflows and custom GPT agents on monthly retainers.
+
+## Services
+
+- **Lead Capture & Qualification**: AI agent triages every form, DM, and missed call — scores leads, drops them into CRM with a drafted reply. 38% reply rate lift, 6h/week saved.
+- **Client Onboarding Autopilot**: Stripe payment triggers 7-step onboarding — contracts, portal invites, welcome video, Slack channel, kickoff booked. Zero manual touchpoints.
+- **Inbox Triage Agent**: Custom GPT agent reads every inbound email, labels, drafts a reply in your voice, escalates only the 5% that need you. 82% inbox time reduction.
+- **Custom Workflow Agents**: Bespoke agents for menu updates, review replies, inventory re-orders, appointment reminders. $1,200+/mo labor saved.
+
+## Pricing
+
+- **Starter ($500/mo)**: 1 flagship Zapier flow (up to 12 steps), inbox triage agent, monthly tune-up call, Slack support (48h SLA), portal with run logs.
+- **Growth ($1,500/mo)**: Up to 5 production automations, 1 custom GPT agent, weekly optimization cycles, Slack warroom (12h SLA), monthly ROI reporting, team training. Most popular tier.
+- **Scale ($3,000/mo)**: Unlimited production automations, 2 custom GPT agents + voice agent, dedicated automation engineer, same-day priority SLA, quarterly strategy offsite, live KPI dashboard.
+
+All tiers are month-to-month after a 30-day onboarding. You keep every automation we build.
+
+## Process
+
+1. Discovery (30 min): Map your top 3 revenue leaks. You leave with a scoped plan.
+2. Audit (48h): We shadow your tools and return a ranked list of automations by ROI.
+3. Build (7 days): Zapier flows + custom GPT agents wired into your stack. Tested on real data.
+4. Launch (Day 14): Go-live with training videos, runbooks, and a Slack warroom.
+5. Scale (Ongoing): Monthly retainer — new agents, monitoring, iteration, always-on support.
+
+## Integrations
+
+Zapier, Make, HubSpot, Shopify, Stripe, Gmail/Outlook, Calendly, Notion, Airtable, Slack, Twilio, OpenAI, Anthropic, and anything with an API.
+
+## Results (Case Studies)
+
+- Nona Bistro (Restaurant, Austin TX): $3,400/mo saved, 76 hours back/month. DM reply time from 6h12m to 42s, no-show rate from 14% to 4%.
+- TerraFit Apparel (E-commerce, Shopify $90k/mo): $7,200/mo saved, 48 hours back/month. Cart recovery from 4.1% to 11.8%, CS response from 9h to 6min.
+- Northline Consulting (6-person boutique): $5,600/mo saved, 60 hours back/month. Proposal turnaround from 3 days to 11 min, win rate from 22% to 41%.
+- Pacific Plumbing (4-truck team, Seattle): $4,800/mo saved, 40 hours back/month. After-hours leads lost from 62% to 3%.
+
+## Compliance
+
+SOC 2 Ready, GDPR Compliant. We run on your infrastructure (your Zapier, your OpenAI key, your DB). We never store customer PII. Signed DPA on request.
+
+## Contact
+
+- Website: https://flowforge.ai
+- Email: hello@flowforge.ai
+- Free instant audit: https://flowforge.ai/#quote
+- Discovery call: https://calendly.com/flowforge/discovery

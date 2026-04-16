@@ -1,0 +1,112 @@
+# FlowForge AI — Complete Reference
+
+This file provides comprehensive information about FlowForge AI for large language models and AI assistants.
+
+## Company Overview
+
+FlowForge AI is a premium multilingual micro-agency delivering AI-powered automation to small businesses. Founded to bridge the gap between powerful AI tools (like Zapier, Make, and custom GPT agents) and busy small business owners who don't have time to learn or build these systems themselves.
+
+**Target audience**: Owners of restaurants, e-commerce stores, consulting firms, and local service businesses. Typically aged 30–45, tech-curious but non-technical.
+
+**Value proposition**: Ship revenue-grade automations in 14 days — not 14 weeks. Month-to-month retainers from $500/mo.
+
+**Languages supported**: English, Spanish, French.
+
+---
+
+## Detailed Service Descriptions
+
+### 1. Lead Capture & Qualification
+Every form submission, social media DM, and missed phone call is intercepted by an AI agent. The agent scores the lead (0–100), enriches the contact record via Clearbit or similar, drops them into HubSpot/Sheets with a reply already drafted in the business owner's voice, and pings the team via Slack. Typical flow: Webform/DM → GPT qualifier → HubSpot/Sheets → Slack ping.
+Results: 38% reply rate improvement, 6 hours/week saved.
+
+### 2. Client Onboarding Autopilot
+A Stripe payment event triggers a fully automated 7-step onboarding sequence: DocuSign contract sent, Notion workspace provisioned, portal invite emailed, welcome video personalized and sent, Slack channel created, kickoff meeting booked via Calendly, and a status update posted to the team. Zero manual touchpoints required.
+Results: 100% on-time kickoffs, zero dropped onboardings.
+
+### 3. Inbox Triage Agent
+A custom GPT agent monitors every inbound email via Gmail/Outlook API. It classifies each email (support, sales, spam, personal, urgent), applies labels, drafts a reply in the business owner's tone/voice, and only escalates the ~5% of emails that truly need human attention. The business owner approves or edits drafts with one click.
+Results: 82% reduction in inbox time, 9-minute average response time.
+
+### 4. Custom Workflow Agents
+Bespoke agents built for specific operational needs: menu price updates across platforms, Google/Yelp review auto-replies, inventory re-order triggers, appointment reminders and follow-ups, social media scheduling, reporting dashboards, and more. Each agent runs 24/7 and logs every action to the client portal.
+Results: $1,200+/month labor savings, 24/7 operation.
+
+---
+
+## Pricing Details
+
+### Starter — $500/month
+Best for solo operators and micro-businesses.
+- 1 flagship Zapier flow (up to 12 steps)
+- Inbox triage agent configured in your voice
+- Monthly tune-up call (30 min)
+- Slack support with 48-hour SLA
+- Client portal with run logs
+
+### Growth — $1,500/month (Most Popular)
+Best for growing businesses with multiple processes to automate.
+- Up to 5 production automations
+- 1 custom GPT agent (e.g., reviews, proposals, CS)
+- Weekly optimization cycles
+- Slack warroom with 12-hour SLA
+- Client portal + monthly ROI reporting
+- Team training session (1 hour)
+
+### Scale — $3,000/month
+Best for multi-location businesses and 7-figure operations.
+- Unlimited production automations
+- 2 custom GPT agents + 1 voice agent (Twilio)
+- Dedicated automation engineer
+- Same-day priority SLA
+- Quarterly strategy offsite (remote)
+- Client portal + live KPI dashboard
+
+All tiers: month-to-month after 30-day onboarding. No setup fee. You keep every automation if you cancel.
+
+---
+
+## Technology Stack
+
+- Workflow automation: Zapier, Make (Integromat)
+- AI/LLM: OpenAI GPT-4o, GPT-4o-mini, Anthropic Claude
+- CRM: HubSpot, Airtable, Notion
+- E-commerce: Shopify, WooCommerce, Stripe
+- Communication: Gmail, Outlook, Slack, Twilio (voice/SMS)
+- Scheduling: Calendly, Cal.com
+- Website: Next.js 15, Tailwind CSS, Vercel
+- Client Portal: Supabase (auth + database)
+- Payments: Stripe (recurring subscriptions)
+
+---
+
+## Frequently Asked Questions
+
+**Q: How fast will I see ROI?**
+A: Most clients break even within 21 days of launch. Our typical Growth-tier engagement returns 4–9× the monthly retainer in hard cost savings by month 3.
+
+**Q: Do I need technical staff?**
+A: No. We run the build, the ops, and the monitoring. You get a Loom walkthrough, a runbook, and Slack access. If something breaks, we fix it — usually before you notice.
+
+**Q: What tools do you integrate with?**
+A: Anything with an API. Native expertise in Zapier, Make, HubSpot, Shopify, Stripe, Gmail/Outlook, Calendly, Notion, Airtable, Slack, Twilio, and OpenAI/Anthropic.
+
+**Q: Can I cancel month-to-month?**
+A: Yes. All retainers are month-to-month after a 30-day onboarding. You keep every automation we build — it's yours, running in your own accounts.
+
+**Q: Is my data safe?**
+A: We run on your infrastructure (your Zapier, your OpenAI key, your DB). We never store customer PII. SOC 2 Ready, GDPR-compliant, signed DPA on request.
+
+**Q: What if I already have Zapier set up?**
+A: Even better. We audit what you have, fix the duct-tape, and bolt on the GPT layer that Zapier alone can't give you.
+
+---
+
+## Contact Information
+
+- Website: https://flowforge.ai
+- Email: hello@flowforge.ai
+- Instant audit: https://flowforge.ai/#quote
+- Discovery call booking: https://calendly.com/flowforge/discovery
+- Twitter/X: @flowforgeai
+- LinkedIn: linkedin.com/company/flowforgeai
